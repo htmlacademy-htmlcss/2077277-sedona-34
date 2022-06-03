@@ -15,7 +15,7 @@
 }
 
  body {
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 21px;
    color:#333333;
@@ -50,7 +50,7 @@
 
  .navigation-link,
  .navigation-link-current {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -137,7 +137,7 @@
   background-color: rgba(131, 179, 211, 0.12);
  }
 
- li.internal-advantages-list-item:nth-child(2) {
+ .list-item-light-blue {
   background-color: #FFFFFF;
  }
 
@@ -145,7 +145,7 @@
   background-color: rgba(131, 179, 211, 0.12);
  }
 
- li.advantages-list-item:nth-child(4) {
+ .list-item-dark-blue {
   background-color: rgba(131, 179, 211, 0.2);
  }
 
@@ -203,7 +203,7 @@
  }
 
  .footer-contacts-phone-number {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
