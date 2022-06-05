@@ -14,7 +14,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
  body {
+   margin: 0;
+   height: 100%;
    font-family: "PT Sans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 21px;
@@ -43,10 +49,42 @@
  }
 
  .common-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color:#FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
+ }
+
+ .main-container {
+   flex-grow: 1;
  }
 
   /* Index page */
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation-logo {
+    margin-left: 70px;
+    width: 139px;
+  }
+
+  .navigation-list {
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    width: 390px;
+    list-style-type: none;
+  }
+
+  .navigation-user {
+    width: 264px;
+    margin-left: 237px;
+    margin-right: 70px;
+  }
 
  .navigation-link,
  .navigation-link-current {
