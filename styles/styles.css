@@ -40,11 +40,11 @@ html {
    text-decoration: none;
  }
 
- .button-type-2 {
+ .button-primary {
    background-color:#82B3D3;
  }
 
- .button-type-3 {
+ .button-secondary {
    background-color:#7DB54F;
  }
 
@@ -65,25 +65,21 @@ html {
 
   .navigation {
     display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .navigation-logo {
-    margin-left: 70px;
     width: 139px;
+    margin-right: 30px;
   }
 
   .navigation-list {
     margin: 0;
-    margin-left: 30px;
+    margin-right: 237px;
     padding: 0;
     width: 390px;
     list-style-type: none;
-  }
-
-  .navigation-user {
-    width: 264px;
-    margin-left: 237px;
-    margin-right: 70px;
   }
 
  .navigation-link,
@@ -139,6 +135,7 @@ html {
  }
 
  .container-advantages-list-item {
+   min-width: 400px;
    color: #FFFFFF;
    background-color: #82B3D3;
  }
@@ -149,8 +146,6 @@ html {
 
  .internal-advantages-list {
    display: flex;
-   width: 1200px;
-   margin: 0;
    padding: 0;
    list-style-type: none;
  }
@@ -185,18 +180,12 @@ html {
    margin-right: auto;
  }
 
- .advantages-list-item-long {
-   width: 400px;
- }
-
  .container-advantages-list-1 {
   display: flex;
-  width: 1200px;
 }
 
  .container-advantages-list-2 {
    display: flex;
-   width: 1200px;
  }
 
  .internal-advantages-list-item {
@@ -273,12 +262,12 @@ html {
  .footer-container {
    display: flex;
    justify-content: space-between;
-   margin: 0 auto;
-   width: 1060px;
  }
 
  .footer-contacts {
    text-align: center;
+   padding-right: 70px;
+   padding-left: 70px;
  }
 
  .footer-contacts-phone-number {
@@ -294,6 +283,8 @@ html {
  /* Catalog page */
 
  .inner-header-filters {
+   padding-left: 70px;
+   padding-right: 70px;
    background-image: url("../images/background/filters-background.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -327,8 +318,11 @@ html {
 
  .filters-form-container {
    display: flex;
-   width: 1060px;
-   margin: 0 auto;
+ }
+
+ .filters-form-group {
+   margin: 0;
+   padding: 0;
  }
 
  .filters-form-list {
@@ -364,13 +358,14 @@ html {
 
 .filters-price {
   width: 288px;
+  margin-right: 70px;
 }
 
 .select-catalog {
 display: flex;
+padding-left: 73px;
+padding-right: 71px;
 flex-direction: column;
-width: 1056px;
-margin: 0 auto;
 }
 
  .select-quantity {
@@ -379,6 +374,12 @@ margin: 0 auto;
    line-height: 36px;
    text-transform: uppercase;
    color: #000000;
+ }
+
+ .hotel-list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
  }
 
  .hotel-card-title {
@@ -393,6 +394,12 @@ margin: 0 auto;
    line-height: 20px;
    text-align: center;
    text-transform: uppercase;
+ }
+
+ .pagination {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
  }
 
  .pagination-link {
