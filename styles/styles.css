@@ -152,17 +152,27 @@ justify-content: flex-end;
 }
 
 .description {
+  padding-top: 63px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
 .description-title {
+  margin: 0;
+  margin-bottom: 31px;
+  margin-right: 290px;
+  margin-left: 290px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.best-description {
+  margin: 0;
+  margin-bottom: 90px;
 }
 
 .advantages {
@@ -179,6 +189,8 @@ justify-content: flex-end;
 
 .advantages-title,
 .internal-advantages-title {
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -186,7 +198,21 @@ justify-content: flex-end;
   color: #000000;
 }
 
+.advantages-number {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.advantages-description,
+.internal-advantages-description {
+margin: 0;
+}
+
 .container-advantages-list-item {
+  box-sizing: border-box;
+  padding-top: 92px;
+  padding-left: 85px;
+  padding-right: 85px;
   min-width: 400px;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -197,6 +223,12 @@ justify-content: flex-end;
   color: #FFFFFF;
 }
 
+.container-advantages-list-item,
+.internal-advantages-list-item,
+.advantages-list-item {
+  min-height: 384px;
+}
+
 .internal-advantages-list {
   display: flex;
   padding: 0;
@@ -205,6 +237,7 @@ justify-content: flex-end;
 
 .internal-advantages-house {
   display: block;
+  margin-bottom: 30px;
   background-image: url("../images/advantage-icons/house.svg");
   width: 75px;
   height: 72px;
@@ -215,6 +248,7 @@ justify-content: flex-end;
 
 .internal-advantages-meal {
   display: block;
+  margin-bottom: 30px;
   background-image: url("../images/advantage-icons/meal.svg");
   width: 74px;
   height: 72px;
@@ -225,6 +259,7 @@ justify-content: flex-end;
 
 .internal-advantages-souvenir {
   display: block;
+  margin-bottom: 30px;
   background-image: url("../images/advantage-icons/souvenir.svg");
   width: 64px;
   height: 76px;
@@ -242,6 +277,10 @@ justify-content: flex-end;
 }
 
 .internal-advantages-list-item {
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-left: 85px;
+  padding-right: 85px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -251,6 +290,10 @@ justify-content: flex-end;
 }
 
 .advantages-list-item {
+  box-sizing: border-box;
+  padding-top: 92px;
+  padding-left: 85px;
+  padding-right: 85px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -260,12 +303,15 @@ justify-content: flex-end;
 }
 
 .search {
+  padding-top: 91px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
 .search-question {
+  display: block;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -274,8 +320,15 @@ justify-content: flex-end;
 }
 
 .search-button {
+  display: block;
+  margin-bottom: 93px;
   font-size: 20px;
   line-height: 36px;
+}
+
+.search-description {
+  margin: 0;
+  margin-bottom: 68px;
 }
 
 .newsletter {
@@ -286,6 +339,8 @@ justify-content: flex-end;
 
 .newsletter-title,
 .newsletter-title-1 {
+  margin: 0;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -296,7 +351,14 @@ justify-content: flex-end;
   color: #000000;
 }
 
+.newsletter-description {
+  margin: 0;
+  margin-bottom: 46px;
+}
+
 .container-newsletter {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-image: url("../images/background/newsletter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -311,12 +373,30 @@ justify-content: flex-end;
 .footer-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .footer-contacts {
+  padding-top: 40px;
   text-align: center;
   padding-right: 70px;
   padding-left: 70px;
+}
+
+.footer-contacts-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 190px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-contacts-social-link {
+  display: block;
+  min-width: 22px;
+  min-height: 17px;
+  padding: 12px;
 }
 
 .footer-contacts-phone-number {
