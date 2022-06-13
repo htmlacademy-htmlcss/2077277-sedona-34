@@ -365,6 +365,11 @@ margin: 0;
   color: #FFFFFF;
 }
 
+.newsletter-catalog {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
@@ -412,8 +417,8 @@ margin: 0;
 /* Catalog page */
 
 .inner-header-filters {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 70px;
+  padding-top: 35px;
   background-image: url("../images/background/filters-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -427,22 +432,37 @@ margin: 0;
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
+  max-width: 400px;
+  list-style-type: none;
 }
 
 .breadcrumbs-item a {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+margin-right: 20px;
+padding: 4px;
 }
 
 .filters-form-container {
@@ -492,12 +512,20 @@ margin: 0;
 
 .select-catalog {
   display: flex;
+  padding-top: 50px;
   padding-left: 73px;
   padding-right: 71px;
   flex-direction: column;
 }
 
+.select-catalog-wrapper {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 76px;
+}
+
 .select-quantity {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
