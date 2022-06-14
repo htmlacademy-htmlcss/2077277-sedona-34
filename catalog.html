@@ -52,7 +52,8 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span class="visually-hidden">Главная</span></a>
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span
+                    class="visually-hidden">Главная</span></a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -133,15 +134,17 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <button class="button-select" type="button">
-              <span class="visually-hidden">Показать мелкие карточки</span>
-            </button>
-            <button class="button-select" type="button">
-              <span class="visually-hidden">Показать крупные карточки</span>
-            </button>
-            <button class="button-select" type="button">
-              <span class="visually-hidden">Показать карточки списком</span>
-            </button>
+            <div class="button-select-wrapper">
+              <button class="button-select button-select-current" type="button">
+                <span class="visually-hidden">Показать мелкие карточки</span>
+              </button>
+              <button class="button-select" type="button">
+                <span class="visually-hidden">Показать крупные карточки</span>
+              </button>
+              <button class="button-select" type="button">
+                <span class="visually-hidden">Показать карточки списком</span>
+              </button>
+            </div>
           </div>
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -214,7 +217,7 @@
                 <a class="pagination-link">10</a>
               </li>
             </ol>
-            <label>Гостиниц на странице:
+            <label class="pagination-label">Гостиниц на странице:
               <select class="pagination-select">
                 <option value="four">4</option>
                 <option value="eight">8</option>
