@@ -560,17 +560,42 @@ margin-right: 0;
 }
 
 .hotel-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 96px;
   padding: 0;
   list-style-type: none;
 }
 
+.hotel-card {
+  box-sizing: border-box;
+  width: 340px;
+  min-height: 438px;
+  padding: 20px;
+}
+
+.hotel-card:not(:nth-child(3n)) {
+  margin-right: 18px;
+}
+
+.hotel-card-item {
+  display: block;
+  width: 140px;
+  margin-right: 20px;
+}
+
 .hotel-card-title {
+  margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.hotel-card-image {
+  margin-bottom: 16px;
 }
 
 .hotel-rating {
