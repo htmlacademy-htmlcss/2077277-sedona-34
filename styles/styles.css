@@ -112,9 +112,9 @@ body {
 }
 
 .navigation-user {
-max-width: 300px;
-align-items: center;
-justify-content: flex-end;
+  max-width: 300px;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navigation-link-user {
@@ -203,7 +203,7 @@ justify-content: flex-end;
 
 .advantages-description,
 .internal-advantages-description {
-margin: 0;
+  margin: 0;
 }
 
 .container-advantages-list-item {
@@ -217,8 +217,7 @@ margin: 0;
   background-color: #82B3D3;
 }
 
-.container-advantages-list-item
-.advantages-title {
+.container-advantages-list-item .advantages-title {
   color: #FFFFFF;
 }
 
@@ -344,6 +343,12 @@ margin: 0;
   color: #FFFFFF;
 }
 
+.newsletter-form {
+  display: grid;
+  grid-template-columns: min(600px) min(200px);
+  justify-content: center;
+}
+
 .newsletter-title,
 .newsletter-title-1 {
   margin: 0;
@@ -460,8 +465,8 @@ margin: 0;
 }
 
 .breadcrumbs-link-home {
-margin-right: 20px;
-padding: 4px;
+  margin-right: 20px;
+  padding: 4px;
 }
 
 .filters-form-container {
@@ -518,9 +523,9 @@ padding: 4px;
 }
 
 .select-catalog-wrapper {
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
 }
 
 .select-quantity {
@@ -556,12 +561,13 @@ margin-bottom: 76px;
 }
 
 .button-select:nth-child(3n) {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   margin: 0;
   margin-bottom: 96px;
   padding: 0;
@@ -575,14 +581,11 @@ margin-right: 0;
   padding: 20px;
 }
 
-.hotel-card:not(:nth-child(3n)) {
-  margin-right: 18px;
-}
-
-.hotel-card-item {
-  display: block;
-  width: 140px;
-  margin-right: 20px;
+.hotel-card-item-wrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 .hotel-card-title {
@@ -598,7 +601,9 @@ margin-right: 0;
   margin-bottom: 16px;
 }
 
-.hotel-rating {
+.hotel-card-rating {
+  padding-top: 9px;
+  background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -623,7 +628,7 @@ margin-right: 0;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 11px 20px;
+  padding-top: 11px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
