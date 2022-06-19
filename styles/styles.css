@@ -212,7 +212,7 @@ body {
   padding-bottom: 50px;
   padding-left: 85px;
   padding-right: 85px;
-  min-width: 400px;
+  width: 400px;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -229,6 +229,7 @@ body {
 
 .internal-advantages-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
 }
@@ -268,10 +269,12 @@ body {
 
 .container-advantages-list-1 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container-advantages-list-2 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .internal-advantages-list-item {
@@ -566,7 +569,7 @@ body {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(auto-fill, 340px);
   column-gap: 18px;
   margin: 0;
   margin-bottom: 96px;
