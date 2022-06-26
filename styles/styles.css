@@ -405,12 +405,12 @@ body {
 }
 
 .newsletter-form-field-catalog {
-background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .newsletter-button {
-border-radius: 0px 10px 10px 0px;
-padding: 12px 15px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 12px 15px;
 }
 
 .newsletter-title,
@@ -466,12 +466,12 @@ padding: 12px 15px;
 }
 
 .navigation-icon {
-position: absolute;
-margin: auto;
-top: 0;
-bottom: 0;
-right: 0;
-left: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .footer-contacts-social-list-item {
@@ -588,7 +588,7 @@ left: 0;
 }
 
 .filters-button-wrapper {
-text-align: center;
+  text-align: center;
 }
 
 .filters-infrastructure {
@@ -620,6 +620,15 @@ text-align: center;
   margin-bottom: 56px;
 }
 
+.control-select {
+  min-width: 290px;
+  padding: 14px 21px 14px 20px;
+  border: 2px solid #E5E5E5;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  border-radius: 4px;
+}
+
 .select-quantity {
   margin: 0;
   margin-right: 191px;
@@ -643,6 +652,10 @@ text-align: center;
   min-height: 14px;
   padding: 17px;
   margin-right: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
   background-color: #FFFFFF;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -650,6 +663,15 @@ text-align: center;
 
 .button-select-current {
   border: 2px solid #000000;
+  background-image: url("../images/select-icons/select-1.svg");
+}
+
+.button-select:nth-child(2) {
+  background-image: url("../images/select-icons/select-2.svg");
+}
+
+.button-select:nth-child(3) {
+  background-image: url("../images/select-icons/select-3.svg");
 }
 
 .button-select:nth-child(3n) {
@@ -691,12 +713,13 @@ text-align: center;
 }
 
 .hotel-card-rating {
-  padding-top: 9px;
+  padding: 9px 22px 8px 23px;
   background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .pagination {
@@ -725,10 +748,20 @@ text-align: center;
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
+  border-radius: 4px;
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.pagination-select {
+  min-width: 160px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-size: 18px;
 }
 
 .pagination-current {
