@@ -562,7 +562,6 @@ fill: #68A2CA;
 
 .footer-contacts-social-link:focus .navigation-icon {
   fill: #68A2CA;
-  outline: none;
   }
 
   .footer-contacts-social-link:active .navigation-icon {
@@ -585,7 +584,6 @@ fill: #68A2CA;
 
 .footer-contacts-phone-number:focus {
   color: #756157;
-  outline: none;
 }
 
 .footer-contacts-phone-number:active {
@@ -609,7 +607,6 @@ fill: #68A2CA;
 
 .footer-contacts-logo-link:focus .footer-contacts-logo-icon {
   fill:#756157;
-  outline: none;
 }
 
 .footer-contacts-logo-link:active .footer-contacts-logo-icon {
@@ -741,6 +738,7 @@ fill: #68A2CA;
 }
 
 .control-select {
+  box-sizing: border-box;
   min-width: 290px;
   padding: 14px 21px 14px 20px;
   border: 2px solid #E5E5E5;
@@ -770,7 +768,7 @@ fill: #68A2CA;
 .button-select {
   min-width: 16px;
   min-height: 14px;
-  padding: 17px;
+  padding: 16px 17px;
   margin-right: 8px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -869,11 +867,31 @@ fill: #68A2CA;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
+
+.pagination-item:not(:first-child) .pagination-link {
+  border: 1px solid #82B3D3;
+}
+
+.pagination-item:not(:first-child) .pagination-link:hover {
+background-color: #68A2CA;
+}
+
+.pagination-item:not(:first-child) .pagination-link:focus {
+  background-color: #68A2CA;
+  outline: none;
+  }
+
+  .pagination-item:not(:first-child) .pagination-link:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+    }
 
 .pagination-select {
   min-width: 160px;
