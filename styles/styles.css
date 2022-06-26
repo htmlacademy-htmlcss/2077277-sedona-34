@@ -368,6 +368,9 @@ body {
 }
 
 .search-button {
+  box-sizing: border-box;
+  padding: 12px 15px;
+  min-width: 574px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -393,6 +396,21 @@ body {
   display: grid;
   grid-template-columns: min(600px) min(200px);
   justify-content: center;
+}
+
+.newsletter-form-field {
+  padding: 20px 22px 19px 22px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.newsletter-form-field-catalog {
+background-color: #F2F2F2;
+}
+
+.newsletter-button {
+border-radius: 0px 10px 10px 0px;
+padding: 12px 15px;
 }
 
 .newsletter-title,
@@ -447,7 +465,21 @@ body {
   padding: 12px;
 }
 
+.navigation-icon {
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+.footer-contacts-social-list-item {
+  position: relative;
+}
+
 .footer-contacts-phone-number {
+  padding: 5px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -459,7 +491,7 @@ body {
 
 .footer-contacts-logo-link {
   display: block;
-  padding: 8px 0;
+  padding-top: 9px;
   min-width: 115px;
   min-height: 34px;
 }
@@ -491,6 +523,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
@@ -537,12 +570,25 @@ body {
   line-height: 26px;
 }
 
+.button-submit {
+  min-width: 160px;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+}
+
 .button-reset {
+  margin: auto;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.filters-button-wrapper {
+text-align: center;
 }
 
 .filters-infrastructure {
@@ -551,12 +597,12 @@ body {
 }
 
 .filters-accommodation {
-  width: 146px;
+  min-width: 146px;
   margin-right: 175px;
 }
 
 .filters-price {
-  width: 288px;
+  min-width: 288px;
   margin-right: 70px;
 }
 
