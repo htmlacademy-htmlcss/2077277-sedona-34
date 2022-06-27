@@ -216,12 +216,16 @@ body {
   background-size: 19px 19px;
 }
 
-.navigation-list-item:nth-child(1) .navigation-link-user {
-  background-image: url("../images/search.svg");
+.navigation-link-user:hover {
+  color: #756157;
 }
 
-.navigation-list-item:nth-child(2) .navigation-link-user {
-  background-image: url("../images/favorite.svg");
+.navigation-link-user:focus {
+  color: #756157;
+}
+
+.navigation-link-user:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-user-favorite {
