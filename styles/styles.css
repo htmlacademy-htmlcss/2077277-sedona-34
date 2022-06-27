@@ -255,12 +255,20 @@ body {
 }
 
 .greeting {
+  position: relative;
   padding-top: 51px;
   padding-bottom: 82px;
   background-image: url("../images/background/greeting-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.greeting::after {
+  position: absolute;
+  content: url("../images/background-decoration.svg");
+  bottom: -5px;
+  left: 0;
 }
 
 .greeting-image {
