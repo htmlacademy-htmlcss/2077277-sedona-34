@@ -222,9 +222,9 @@ body {
 
 .navigation-link-user {
   display: block;
-  min-width: 18px;
-  min-height: 18px;
-  padding: 24px 11px;
+  min-width: 19px;
+  min-height: 26px;
+  padding: 17px 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -755,25 +755,207 @@ body {
 .filters-form-group {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .filters-form-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
 
 .filters-form-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.filters-price .filters-form-title {
+  margin-bottom: 34px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-item[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/control-mark-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-item[type="radio"] + .control-mark {
+border-radius: 50%;
+}
+
+.control-item[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.filters-form-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* .control-input:disabled + .control-mark {
+  border-color: #242424;
+} */
+
+.range-wrapper-inputs {
+display: flex;
+}
+
+.range-input {
+  box-sizing: border-box;
+  width: 144px;
+  height: 48px;
+  padding: 14px 38px 13px 18px;
+  margin-bottom: 32px;
+  border: 2px solid #FFFFFF;
+  font-family: "PT Sans";
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: transparent;
+  appearance: textfield;
+}
+
+.range-input::placeholder {
+  font-family: "PT Sans";
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.range-input-min {
+  border-right: 1px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-max {
+  border-left: 1px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2,
+              inset 0px 0px 0px 3px #81B3D2;
+  outline: none;
+  border-color: #FFFFFF;
+}
+
+.range-input:not(:placeholder-shown) {
+  background-color: #756257;
+}
+
+.add-wrapper-input {
+position: relative;
+}
+
+.range-input-label {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  font: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+opacity: 0.3;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .button-submit {
   min-width: 160px;
   padding: 14px 15px;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .button-reset {
