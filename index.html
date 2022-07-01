@@ -237,8 +237,8 @@
           <div class="modal-header-wrapper">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <button class="modal-close-button">
-              <svg class="close-button-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="close-button-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
               </svg>
@@ -251,8 +251,8 @@
               <input class="search-form-input search-form-date" type="text" placeholder="27 апреля 2020"
                 name="start-date" id="start-date" />
               <button class="modal-button-calendar" type="button">
-                <svg class="button-calendar-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="button-calendar-icon" aria-hidden="true" focusable="false" width="15" height="15"
+                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity=".3" fill="#000">
                     <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
                     <path
@@ -269,8 +269,8 @@
               <input class="search-form-input search-form-date" type="text" placeholder="1 сентября 2021"
                 name="finish-date" id="finish-date" />
               <button class="modal-button-calendar" type="button">
-                <svg class="button-calendar-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="button-calendar-icon" aria-hidden="true" focusable="false" width="15" height="15"
+                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity=".3" fill="#000">
                     <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z" />
                     <path
@@ -285,32 +285,59 @@
             <label class="search-form-label" for="adults-num">Взрослые:</label>
             <div class="counter-wrapper">
               <button class="modal-button modal-mines-button" type="button">
-                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0v1h13V0H0Z"/></svg>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="1"
+                  viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z" />
+                </svg>
 
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
               <input class="search-form-input search-form-num" type="number" placeholder="2" name="adults-num"
                 id="adults-num" />
               <button class="modal-button modal-plus-button" type="button">
-                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                  viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                </svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
             </div>
-            <label class="search-form-label" for="children-num">Дети:</label>
+            <span class="search-form-label form-label-icon">
+              <label class="search-form-label" for="children-num">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)" fill="#fff">
+                      <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h1v9H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
             <div class="counter-wrapper">
               <button class="modal-button modal-mines-button" type="button">
-                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0v1h13V0H0Z"/></svg>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="1"
+                  viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z" />
+                </svg>
 
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
               <input class="search-form-input search-form-num" type="number" placeholder="1" name="children-num"
                 id="children-num" />
               <button class="modal-button modal-plus-button" type="button">
-                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                <svg class="modal-counter-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                  viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                </svg>
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
             </div>
