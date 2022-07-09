@@ -204,8 +204,8 @@ body {
 
 .navigation-user {
   max-width: 300px;
-  align-items: ;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation-user-icon {
@@ -261,8 +261,8 @@ body {
 
 .navigation-button-favourites {
   min-width: 160px;
-  margin-top: 14px;
   margin-left: 20px;
+  margin-bottom: 5px;
 }
 
 .greeting {
@@ -527,6 +527,10 @@ body {
   outline: none;
 }
 
+.newsletter-form-field:not(:placeholder-shown) {
+  background-color: #FFFFFF;
+}
+
 .newsletter-form-field:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
@@ -776,7 +780,7 @@ body {
 
 .search-form-input {
   padding: 15px 40px 14px 19px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -785,7 +789,7 @@ body {
 }
 
 .search-form-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -826,6 +830,10 @@ body {
 .search-form-date:disabled {
   background-color: #E6E6E6;
   opacity: 0.3;
+}
+
+.search-form-date:invalid {
+  background-color: #F2F2F2;
 }
 
 .modal-button-calendar {
@@ -1139,6 +1147,7 @@ body {
 
 .filters-form-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters-form-group {
@@ -1201,7 +1210,7 @@ body {
   content: "";
 }
 
-.filters-form-item:not(:last-child) {
+.filters-form-item {
   margin-bottom: 15px;
 }
 
@@ -1233,7 +1242,7 @@ body {
   padding: 14px 38px 13px 18px;
   margin-bottom: 32px;
   border: 2px solid #FFFFFF;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   color: #FFFFFF;
   background-color: transparent;
@@ -1241,7 +1250,7 @@ body {
 }
 
 .range-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -1376,6 +1385,8 @@ body {
 }
 
 .filters-button-wrapper {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -1391,7 +1402,7 @@ body {
 
 .filters-price {
   min-width: 288px;
-  margin-right: 70px;
+  margin-right: 67px;
 }
 
 .select-catalog {
@@ -1412,9 +1423,10 @@ body {
   box-sizing: border-box;
   min-width: 290px;
   padding: 14px 40px 14px 20px;
+  align-self: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -1447,6 +1459,7 @@ body {
 }
 
 .select-quantity {
+  align-self: center;
   margin: 0;
   margin-right: 191px;
   max-width: 370px;
@@ -1469,6 +1482,7 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  margin-bottom: 5px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1583,9 +1597,10 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  min-width: 400px;
+  max-width: 600px;
   list-style-type: none;
 }
 
@@ -1608,6 +1623,7 @@ body {
   display: block;
   box-sizing: border-box;
   min-width: 60px;
+  max-width: 150px;
   min-height: 60px;
   padding: 11px 18px 12px 18px;
   font-weight: 700;
@@ -1620,6 +1636,10 @@ body {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.pagination-item {
+  margin-bottom: 5px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1646,11 +1666,13 @@ body {
 
 .pagination-select {
   min-width: 160px;
+  max-width: 250px;
   padding: 14px 20px;
   padding-right: 40px;
+  align-self: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-image: url("../images/arrow-down.svg");
@@ -1669,6 +1691,7 @@ body {
   margin-right: 51px;
   padding-top: 20px;
   padding-bottom: 17px;
+  max-width: 250px;
 }
 
 .newsletter-catalog {
