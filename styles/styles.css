@@ -778,7 +778,7 @@ img {
 }
 
 .search-form-label {
-  padding-right: 10px;
+  padding-right: 7px;
   font: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -887,6 +887,7 @@ img {
   width: 44px;
   flex-grow: 1;
   text-align: center;
+  background-color: #f2f2f2;
   border: none;
 }
 
@@ -1032,8 +1033,7 @@ img {
   height: 25px;
   padding: 0;
   margin: 0;
-  margin-left: 12px;
-  margin-top: 3px;
+  margin-top: 1px;
   display: block;
   border-radius: 50%;
 }
@@ -1059,8 +1059,8 @@ img {
   border-radius: 10px;
   width: 256px;
   position: absolute;
-  margin-top: 15px;
-  left: 65%;
+  margin-top: 16px;
+  left: 50%;
   transform: translateX(-50%);
   display: none;
 }
